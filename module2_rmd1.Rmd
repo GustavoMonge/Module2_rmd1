@@ -3,9 +3,9 @@ title: "Module 2 - R Markdown Document 1"
 author: "Gustavo Monge, PE SE"
 date: "6/29/2019"
 output:
-  pdf_document: default
   html_document: default
   word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -102,3 +102,24 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+We can change the size of the plot. Notice **pressure2** and **pressure**
+
+```{r pressure2, fig.height=5, fig.width=5}
+plot(pressure)
+```
+
+> Use >   data1 -> pressure on therminal to learn about the pressure dataset
+
+## Insert TABLES
+
+We are using cars dataset 
+
+```{r}
+knitr::kable(head(cars), caption = "Top six rows of cars dataset")
+
+```
+
+## Insert an EQUATION
+
+$$ Y = \beta_0 + \beta_1 x $$
