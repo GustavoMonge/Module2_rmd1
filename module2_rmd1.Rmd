@@ -123,3 +123,30 @@ knitr::kable(head(cars), caption = "Top six rows of cars dataset")
 ## Insert an EQUATION
 
 $$ Y = \beta_0 + \beta_1 x $$
+
+## Insert Images
+
+Image from local drive
+
+![GM](GM.jpg)
+
+Image from the web:
+
+![R Logo](https://www.r-project.org/logo/Rlogo.svg)
+
+# Images from the web have to be downloaded locally to your hard drive to be compiled as PDF or Word
+
+## Inser an animated GIF and Video
+
+![Sun star](sunstar/sunstar.gif)
+
+![Sun star](sunstar/sunstar.mp4)
+
+## Insert text with some foot notes
+
+Here is footnote reference [^1] and another [^longnote]
+
+Here is an inline footnote ^[Inline are notes are easier to write, since you dont have to pick an identifier and move down to type the note.]
+
+[^1]: This is the footnote
+[^longnote]: Here is one with multiple blocks
